@@ -6,6 +6,8 @@ string[] unit = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 string[] ten = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
 string[] hundred = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
 string[] thousand = { "", "M", "MM", "MMM", "|IV|", "|V|", "|V|M", "|V|MM", "|V|MMM", "|IX|" };
+string[] tenthousand = { "", "|X|", "|XX|", "|XXX|", "|XL|", "|L|", "|LX|", "|LXX|", "|LXXX|", "|XC|" };
+string[] hundredthousand = { "", "|C|", "|CC|", "|CCC|", "|CD|", "|D|", "|DC|", "|DCC|", "|DCCC|", "|CM|" };
 Console.WriteLine("Enter a number: ");
 input = Console.ReadLine();
 
@@ -72,5 +74,34 @@ void GetRomans()
         string b = unit[a];
         Console.WriteLine(h + f + d + b);
     }
-    
+    else if(input.Length == 5)
+    {
+        int i = int.Parse(x[0]);
+        string j = tenthousand[i];
+        int g = int.Parse(x[1]);
+        string h = thousand[g];
+        int e = int.Parse(x[2]);
+        string f = hundred[e];
+        int c = int.Parse(x[3]);
+        string d = ten[c];
+        int a = int.Parse(x[4]);
+        string b = unit[a];
+        Console.WriteLine(j + h + f + d + b);
+    }
+    else
+    {
+        int k = int.Parse(x[0]);
+        string l = hundredthousand[k];
+        int i = int.Parse(x[1]);
+        string j = tenthousand[i];
+        int g = int.Parse(x[2]);
+        string h = thousand[g];
+        int e = int.Parse(x[3]);
+        string f = hundred[e];
+        int c = int.Parse(x[4]);
+        string d = ten[c];
+        int a = int.Parse(x[5]);
+        string b = unit[a];
+        Console.WriteLine(l + j + h + f + d + b);
+    }
 }
