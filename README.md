@@ -80,7 +80,7 @@ In the Linux Terminal, type:
 
 `git clone https://github.com/arcznze/ArabicARomanAlgorithm.git`
 
-`cd <>`
+`cd ArabicARoman/`
 
 `dotnet run <Arabic number to convert>`
 
@@ -90,9 +90,9 @@ In the Windows Command Line, type:
 
 `git clone https://github.com/arcznze/ArabicARomanAlgorithm.git`
 
-`cd <>`
+`cd ArabicARoman/`
 
-`<>`
+`Program.cs`
 
 This way, the algorithm can be run in Visual Studio from the command line.
 
