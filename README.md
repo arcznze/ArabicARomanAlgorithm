@@ -49,6 +49,25 @@ inside Terminal to add the Microsoft package. You'll likely be prompted for the 
 
 This will allow you to write basic commands and develop .NET applications from the CLI, or Command Line Interface.
 
+You can also type in the Terminal the following commands:
+
+`wget [https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb](https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb)
+sudo dpkg -i packages-microsoft-prod.deb`
+
+This is to install the Microsoft packages repository. The following commands install the Dotnet Core SDK, which is used for developing applications.
+
+`sudo apt update
+sudo apt install apt-transport-https
+sudo apt install dotnet-sdk-3.1`
+
+Now, you need to type in the Terminal the code for the .NET Runtime, which is required to run applications.
+
+`sudo apt update
+sudo apt install apt-transport-https
+sudo apt install dotnet-runtime-3.1`
+
+For more info, you can check these instructions: [https://tecadmin.net/how-to-install-net-core-on-ubuntu-20-04/](https://tecadmin.net/how-to-install-net-core-on-ubuntu-20-04/)
+
 *Windows*
 
 Downloading the latest version of .NET on Windows requires you to first download Visual Studio. Visual Studio Community 2022 ([https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)) is recommended. After installing it, in the Visual Studio Installer, select the .NET desktop development component in the “Workload” tab, which will allow you to develop .NET applications
