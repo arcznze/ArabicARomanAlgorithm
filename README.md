@@ -98,8 +98,8 @@ This way, the algorithm can be run in Visual Studio from the command line.
 
 ## 3. **Documentation Requirements, Acceptance Criteria, and Test Cases.**
 
-[Requirements, Acceptance Criteria, and Test Cases](/Documentation.md)
+[Requirements, Acceptance Criteria, and Test Cases](docs/Documentation.md)
     
 ## 4. **Questionnaire**
 
-[Questionnaire](/Cuestionario.md)
+[Questionnaire](docs/Cuestionario.md)
